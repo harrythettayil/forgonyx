@@ -1,105 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Forgonyx</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="assets/images/gear.svg">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="assets/images/gear.svg" />
+  </head>
+  <body>
     <header class="header">
-        <a href="" class="logo">FORGONYX</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <a href="" class="logo">FORGONYX</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
 
     <section id="home" class="hero-section section">
-        <h1 class="title">Innovative Engineering Solutions</h1>
+      <div class="hero-text">
+        <h1 class="title">Engineering Design Solutions</h1>
         <h3 class="subtitle">Rendering future layer by layer</h3>
-        <a class="header-cta" href="#contact">Get a Free Quote</a>
+        <a class="header-cta mob-none" href="#contact">Get a Free Quote</a>
+      </div>
+      <img class="hero-img" src="assets/images/3d-design.jpg" alt="3d design" />
+      <a class="header-cta desk-none" href="#contact">Get a Free Quote</a>
     </section>
 
     <section class="section bg-color">
-        <h3 class="heading">Who we are</h3>
-        <p>Welcome to <span class="text-semibold">FORGONYX</span>, where innovation meets excellence in mechanical design! With years of experience under our belt, we craft top-notch, reliable solutions tailored just for you. Passionate about sustainable development, our cutting-edge designs not only dazzle today but also pave the way for a greener tomorrow.</p>
-        <p>We excel in high-pressure tubing, hydrogen fueling systems and piping, as well as safety systems for the oil and gas industry. Our expertise extends to precision-engineered medical equipment and state-of-the-art hydroponics machines for farms.</p>
+      <h3 class="heading">Who we are</h3>
+      <p>
+        Welcome to <span class="text-semibold">FORGONYX</span>, where innovation
+        meets excellence in mechanical design! With years of experience under
+        our belt, we craft top-notch, reliable solutions tailored just for you.
+        Passionate about sustainable development, our cutting-edge designs not
+        only dazzle today but also pave the way for a greener tomorrow.
+      </p>
+      <p>
+        We excel in high-pressure tubing, hydrogen fueling systems and piping,
+        as well as safety systems for the oil and gas industry. Our expertise
+        extends to precision-engineered medical equipment and state-of-the-art
+        hydroponics machines for farms.
+      </p>
     </section>
 
     <section id="services" class="section">
-        <h3 class="heading">What we provide</h3>
-        <h6 class="subheading">CAD Modelling and Detailing</h6>
-        <p>Mechanical 3D design embodies the pinnacle of precision engineering and innovation, seamlessly blending artistry with functionality to craft intricate structures and mechanisms in three-dimensional space. At its core, this discipline transcends traditional design boundaries, offering a transformative approach to conceptualization, prototyping, and manufacturing across various industries.</p>
-        <h6 class="subheading">Simulation, analysis and prototyping</h6>
-        <p>We leverage cutting-edge simulation, analysis, and prototyping to bring ideas to life with precision and confidence. Advanced simulations allow us to predict performance under real-world conditions, while thorough analysis ensures optimal design efficiency and reliability. By delivering rapid, high-quality prototypes, we give customers a tangible preview of their solutions, showcasing our commitment to innovation and excellence.</p>
+      <h3 class="heading">What we provide</h3>
+      <h6 class="subheading">CAD Modelling and Detailing</h6>
+      <p>
+        Mechanical 3D design embodies the pinnacle of precision engineering and
+        innovation, seamlessly blending artistry with functionality to craft
+        intricate structures and mechanisms in three-dimensional space. At its
+        core, this discipline transcends traditional design boundaries, offering
+        a transformative approach to conceptualization, prototyping, and
+        manufacturing across various industries.
+      </p>
+      <h6 class="subheading">Simulation, analysis and prototyping</h6>
+      <p>
+        We leverage cutting-edge simulation, analysis, and prototyping to bring
+        ideas to life with precision and confidence. Advanced simulations allow
+        us to predict performance under real-world conditions, while thorough
+        analysis ensures optimal design efficiency and reliability. By
+        delivering rapid, high-quality prototypes, we give customers a tangible
+        preview of their solutions, showcasing our commitment to innovation and
+        excellence.
+      </p>
     </section>
 
     <section id="projects" class="section bg-color">
-        <h3 class="heading">Projects</h3>
+      <h3 class="heading">Projects</h3>
     </section>
 
     <section id="contact" class="section">
-        <h3 class="heading">Lets make something great together!</h3>
-        <form action="https://formsubmit.co/info@forgonyx.com" method="POST">
-            <section class="left">
-              <div class="input-container">
-                <label for="name">Name</label>
-                <input type="text" />
-              </div>
-              <div class="input-container">
-                <label for="phone">Phone</label>
-                <input type="text" />
-              </div>
-              <div class="input-container">
-                <label for="email">Email</label>
-                <input type="text" />
-              </div>
-            </section>
-            <section class="right">
-              <div class="input-container">
-                <label for="message">Message</label>
-                <textarea name="message" id=""></textarea>
-              </div>
-            </section>
-            <div class="send-container">
-              <input type="submit" value="Send" onclick="return true"/>
-             </div>
-          </form>
+      <h3 class="heading">Lets make something great together!</h3>
+      <form action="https://formsubmit.co/info@forgonyx.com" method="POST">
+        <section class="left">
+          <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" />
+          </div>
+          <div class="input-container">
+            <label for="phone">Phone</label>
+            <input type="text" />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="text" />
+          </div>
+        </section>
+        <section class="right">
+          <div class="input-container">
+            <label for="message">Message</label>
+            <textarea name="message" id=""></textarea>
+          </div>
+        </section>
+        <div class="send-container">
+          <input type="submit" value="Send" onclick="return true" />
+        </div>
+      </form>
     </section>
 
     <section class="section footer">
-        <h3 class="heading">FORGONYX</h3>
-        <div class="contact-info">
-            <div class="contact-box">
-                <img class="contact-icon" src="assets/images/mail.svg" alt="Example Image">
-                <h5><a class="contact-links" href="mailto:info@forgonyx.com">info@forgonyx.com</a></h5>
-            </div>
-            <div class="contact-box">
-                <img class="contact-icon" src="assets/images/phone.svg" alt="Example Image">
-                <h5 class="phone-number"><a class="contact-links" href="tel:+916369000187">+91 6369 000 187</a><a class="contact-links" href="tel:+917907132224">+91 7907 132 224</a></h5>
-            </div>
-            <div class="contact-box">
-                <img class="contact-icon" src="assets/images/map-pin.svg" alt="Example Image">
-                <h5><a class="contact-links" href="https://maps.app.goo.gl/u2qeUvxXEnzVWdUz5" target="_blank">Room No.2, TBI-GEC, Government Engineering College, Thrissur, 680 009</a></h5>
-            </div>
+      <h3 class="heading">FORGONYX</h3>
+      <div class="contact-info">
+        <div class="contact-box d-flex">
+          <img
+            loading="lazy"
+            class="contact-icon"
+            src="assets/images/mail.svg"
+            alt="Example Image"
+          />
+          <h5>
+            <a class="contact-links" href="mailto:info@forgonyx.com"
+              >info@forgonyx.com</a
+            >
+          </h5>
         </div>
-        <ul class="footer-links">
-            <li><a class="f-link" href="#home">Home</a></li>
-            <li><a class="f-link" href="#services">Services</a></li>
-            <li><a class="f-link" href="#projects">Projects</a></li>
-            <li><a class="f-link" href="#hydrogen">Hydrogen</a></li>
-            <li><a class="f-link" href="#contact">Contact</a></li>
-        </ul>
-        <p class="copyright">© 2025 FORGONYX. All rights reserved.</p>
+        <div class="contact-box d-flex">
+          <img
+            loading="lazy"
+            class="contact-icon"
+            src="assets/images/phone.svg"
+            alt="Example Image"
+          />
+          <h5 class="phone-number">
+            <a class="contact-links" href="tel:+916369000187"
+              >+91 6369 000 187</a
+            ><a class="contact-links" href="tel:+917907132224"
+              >+91 7907 132 224</a
+            >
+          </h5>
+        </div>
+        <div class="contact-box d-flex">
+          <img
+            loading="lazy"
+            class="contact-icon"
+            src="assets/images/map-pin.svg"
+            alt="Example Image"
+          />
+          <h5>
+            <a
+              class="contact-links"
+              href="https://maps.app.goo.gl/u2qeUvxXEnzVWdUz5"
+              target="_blank"
+              >Room No.2, TBI-GEC, Government Engineering College, Thrissur, 680
+              009</a
+            >
+          </h5>
+        </div>
+      </div>
+      <ul class="footer-links">
+        <li><a class="f-link" href="#home">Home</a></li>
+        <li><a class="f-link" href="#services">Services</a></li>
+        <li><a class="f-link" href="#projects">Projects</a></li>
+        <li><a class="f-link" href="#hydrogen">Hydrogen</a></li>
+        <li><a class="f-link" href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">© 2025 FORGONYX. All rights reserved.</p>
     </section>
-    
-</body>
+  </body>
 </html>
