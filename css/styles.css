@@ -209,10 +209,13 @@ a:hover {
 
 .header-cta {
   font-weight: var(--font-weight-semibold);
-  border-radius: 4px;
+  border-radius: 32px;
   background-color: var(--third-color);
   margin-bottom: 24px;
   padding: 15px 30px;
+  width: fit-content;
+  align-self: center;
+  cursor: pointer;
 }
 
 .heading {
@@ -226,9 +229,25 @@ a:hover {
   font-weight: var(--font-weight-semibold);
 }
 
+.about-us,
+.services {
+  flex-direction: column;
+  align-items: center;
+}
+
+.designer-img,
+.dispenser-img {
+  width: 50%;
+}
+
 .footer {
   color: var(--forth-color);
-  background-color: var(--primary-color);
+  background: rgb(69, 71, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(69, 71, 75, 1) 0%,
+    rgba(73, 94, 87, 1) 100%
+  );
 }
 
 .footer-links {
@@ -306,12 +325,14 @@ form .send-container {
   margin-top: 15px;
 }
 form .send-container input {
-  width: 100%;
+  width: fit-content;
+  border-radius: 32px;
+  display: flex;
+  margin: 0 auto;
   background: var(--third-color);
   border: none;
   color: var(--primary-color);
   padding: 15px 30px;
-  border-radius: 4px;
   font-size: 16px;
   font-weight: var(--font-weight-semibold);
   cursor: pointer;
@@ -355,7 +376,35 @@ form section .input-container textarea {
   resize: none;
 }
 
+.industries {
+  gap: 16px;
+  flex-direction: column;
+}
+
+.industry-img {
+  width: 60%;
+}
+
 @media (min-width: 768px) {
+  .about-us,
+  .services {
+    flex-direction: row;
+    gap: 80px;
+  }
+
+  .designer-img,
+  .dispenser-img {
+    width: 256px;
+  }
+
+  .industries {
+    flex-direction: row;
+  }
+
+  .industry-img {
+    width: 25%;
+  }
+
   .mob-none {
     display: block;
   }
@@ -405,6 +454,10 @@ form section .input-container textarea {
     width: 50%;
   }
 
+  .header-cta {
+    align-self: unset;
+  }
+
   .heading {
     font-size: 25px;
   }
@@ -441,5 +494,7 @@ form section .input-container textarea {
   }
   form .send-container input {
     width: auto;
+    display: unset;
+    margin: unset;
   }
 }
