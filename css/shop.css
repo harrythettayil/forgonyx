@@ -243,6 +243,11 @@ a:hover {
   flex-grow: 1;
 }
 
+.product-section{
+  padding-left: 16px;
+  padding-right: 0;
+}
+
 @media (min-width: 768px) {
   .input-elevated {
     display: block;
