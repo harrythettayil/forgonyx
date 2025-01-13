@@ -194,6 +194,18 @@ a:hover {
   margin-bottom: 24px;
 }
 
+.hero-section .shop-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 200px;
+}
+
+.arrow-icon{
+  width: 24px;
+}
+
 .title {
   font-size: 23px;
   line-height: 32px;
@@ -387,7 +399,21 @@ form section .input-container textarea {
   border: 5px solid var(--secondary-color);
 }
 
+.desk-btn-container{
+  display: none;
+}
+
 @media (min-width: 768px) {
+
+  .header-cta.shop-btn.desk-none{
+    display: none;
+  }
+
+  .desk-btn-container{
+    display: flex;
+    gap:16px
+  }
+
   .about-us,
   .services {
     flex-direction: row;
