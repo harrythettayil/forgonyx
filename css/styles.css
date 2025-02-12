@@ -189,6 +189,7 @@ a:hover {
   padding: 32px 16px;
   color: var(--primary-color);
   scroll-margin-top: 60px;
+  text-align: center;
 }
 
 .hero-section {
@@ -280,6 +281,7 @@ a:hover {
   gap: 16px;
   list-style-type: none;
   margin-bottom: 16px;
+  justify-content: center;
 }
 
 .f-link {
@@ -291,20 +293,14 @@ a:hover {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   margin-bottom: 24px;
   border-radius: 4px;
   padding: 16px;
-  background-color: var(--secondary-color);
 }
 
 .contact-icon {
   filter: invert(1);
-}
-
-.contact-box {
-  align-items: center;
-  gap: 16px;
 }
 
 .copyright {
@@ -403,6 +399,7 @@ form section .input-container textarea {
 .industries {
   gap: 16px;
   flex-direction: column;
+  align-items: center;
 }
 
 .industry-img {
@@ -425,6 +422,7 @@ form section .input-container textarea {
 
   .industries {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   .industry-img {
@@ -439,6 +437,7 @@ form section .input-container textarea {
   }
   .section {
     padding: 40px 80px;
+    text-align: left;
   }
   .title {
     font-size: 31px;
@@ -499,6 +498,7 @@ form section .input-container textarea {
   .contact-info {
     flex-direction: row;
     gap: 64px;
+    background-color: var(--secondary-color);
   }
 
   /* form */
@@ -522,5 +522,15 @@ form section .input-container textarea {
     width: auto;
     display: unset;
     margin: unset;
+  }
+
+  .contact-box{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
